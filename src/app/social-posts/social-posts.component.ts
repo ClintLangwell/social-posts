@@ -26,7 +26,7 @@ export class SocialPostsComponent implements OnInit {
       thought: 'This is the fourth thought',
     },
   ];
-
+  showForm: boolean;
   constructor() {}
 
   ngOnInit(): void {}
@@ -37,9 +37,10 @@ export class SocialPostsComponent implements OnInit {
 
   onSubmit = (post: Post): void => {
     this.posts.push(post);
+    this.toggleShow();
   };
 
-  showForm = (): void => {
-    console.log('popup?');
+  toggleShow = (): void => {
+    this.showForm = !this.showForm;
   };
 }

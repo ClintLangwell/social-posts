@@ -1,8 +1,8 @@
 <section class="main-container">
   <h1 class="mainhead">My Thoughts</h1>
-  <button class="addBtn hidden" (click)="showForm()">New Thought</button>
+  <button class="addBtn" (click)="toggleShow()">New Thought</button>
 
-  <div class="form-container">
+  <div class="form-container" *ngIf="showForm">
     <app-post-form (submitted)="onSubmit($event)"></app-post-form>
   </div>
 
