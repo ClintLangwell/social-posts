@@ -1,0 +1,16 @@
+<section class="main-container">
+  <h1 class="mainhead">My Thoughts</h1>
+  <button class="addBtn hidden" (click)="showForm()">New Thought</button>
+
+  <div class="form-container">
+    <app-post-form (submitted)="onSubmit($event)"></app-post-form>
+  </div>
+
+  <ul class="thoughts-container">
+    <app-post
+      *ngFor="let post of posts; index as i"
+      [post]="post"
+      (deleted)="onDelete(i)"
+    ></app-post>
+  </ul>
+</section>

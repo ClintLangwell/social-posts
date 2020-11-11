@@ -1,0 +1,6 @@
+.thought-container {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 15px 25px;
+}

@@ -1,0 +1,32 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  padding: 50px;
+}
+
+.mainhead {
+  font-family: "Homemade Apple", cursive;
+  color: rgb(3, 169, 244);
+  font-size: 3rem;
+}
+
+.thoughts-container {
+  width: 75%;
+  border: 1px solid black;
+}
+
+.addBtn {
+  width: 75%;
+  padding: 10px;
+}
+
+.form-container {
+  margin: 50px;
+  width: 75%;
+}
+
+.hidden {
+  display: none;
+}
